@@ -1,0 +1,176 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--seccondary-bg-color);
+}
+nav .newChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-top: 5vh;
+}
+nav .newChat .icon{
+    width: 10%;
+    position: relative;
+}
+nav .newChat .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav .history{
+    position: relative;
+    height: 40%;
+}
+
+nav .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 80%;
+}
+nav .options .header{
+    width: fit-content;
+    justify-self: left;
+    padding: 0 0 .5rem 0;
+}
+nav .options .header p{
+    color: var(--seccondary-font-color);
+}
+nav .options .options-items{
+    position: relative;
+    width: 100%;
+}
+nav .options .options-items .item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+nav .options .options-items .item:hover{
+    background-color: var(--third-bg-color);
+}
+nav .options .options-items .item li{
+    list-style-type: none;
+    color: var(--main-font-color);
+}
+nav .options .options-items .item .icon{
+    position: relative; 
+    width: 15%;
+    height: 100%;
+    display: none;
+    animation-duration: 1s;
+    justify-content: center;
+    align-items: center;
+}
+nav .options .options-items .item:hover .icon{
+    display: flex;
+}
+nav .options .options-items .item .icon .dropdown-icon{
+    width: 70%;
+    object-fit: contain;
+}
+nav .options .options-items .item .icon .dropdown{
+    display: none;
+    position: absolute;
+    width: 15vw;
+    top: 100%;
+    left: 0%;
+}
+nav .options .options-items .item .icon:hover .dropdown{
+    display: flex;
+}
+nav .options .options-items .item .icon .dropdown .item{
+    background-color: var(--third-bg-color);
+    padding: 10%;
+    justify-content: left;
+}
+nav .options .options-items .item .icon .dropdown .item.item:hover{
+    background-color: var(--seccondary-bg-color);
+}
+nav .options .options-items .item .icon .dropdown .item .item-icon{
+    width: 15%;
+    object-fit: contain;
+    margin-right: 10%;
+}
+nav .options .options-items .item .icon .dropdown .item:nth-child(2) li{
+    color: var(--danger-color);
+}
+
+nav .profile{
+    width: 80%;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+nav .profile .upgrade-plan{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .profile .upgrade-plan .desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+nav .profile .upgrade-plan .icon {
+    width: 15%;
+    object-fit: contain;
+    margin-right: 5%;
+}
+nav .profile .upgrade-plan .text{
+    width: 70%;
+    text-align: left;
+}
+nav .profile .upgrade-plan .text .desc{
+    width: 100%;
+}
+nav .profile .upgrade-plan .text .desc:nth-child(2){
+    width: 100%;
+    color: var(--seccondary-font-color);
+}
+nav .profile-option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav .profile-option .circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: chocolate;
+    border-radius: 100%;
+}
+
+nav .profile-option .custom-select {
+    position: relative;
+    width: 70%;
+}
+nav .profile-option .custom-select #user {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: var(--main-font-color);
+    border: none;
+}
+nav .profile-option .custom-select #user option {
+    background-color: var(--third-bg-color);
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root{
+    --font-scale : 20;
+    --main-bg-color : #343541;
+    --seccondary-bg-color  : #000000;
+    --third-bg-color : #202123;
+    --main-font-color : #FFFFFF;
+    --seccondary-font-color : #C5C5D2;
+    --third-font-color : #202123;
+    --danger-color : #EF4036;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: calc(48 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+h2{
+    font-size: calc(40 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+h3{
+    font-size: calc(36 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+p{
+    font-size: calc(24 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+p.desc{
+    font-size: calc(18 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+li{
+    font-size: calc(22 / var(--font-scale) * 1rem);
+    color: var(--main-font-color);
+}
+
+.font-color-1 {
+    color: var(--main-font-color);
+}
+.font-color-2 {
+    color: var(--seccondary-font-color);
+}
+.font-color-3 {
+    color: var(--third-font-color);
+}
+.font-size-xxs {
+    font-size: calc(14 / var(--font-scale) * 1rem) !important;
+}
+.font-size-xs {
+    font-size: calc(18 / var(--font-scale) * 1rem) !important;
+}
+.font-size-s {
+    font-size: calc(22 / var(--font-scale) * 1rem) !important;
+}
+.font-size-m {
+    font-size: calc(24 / var(--font-scale) * 1rem) !important;
+}
+.font-size-l {
+    font-size: calc(36 / var(--font-scale) * 1rem) !important;
+}
+.font-size-xl {
+    font-size: calc(40 / var(--font-scale) * 1rem) !important;
+}
+.bg-color-1 {
+    color: var(--main-bg-color);
+}
+.bg-color-2 {
+    color: var(--seccondary-bg-color);
+}
+.bg-color-3 {
+    color: var(--third-bg-color);
+}
