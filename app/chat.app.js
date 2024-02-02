@@ -3,10 +3,9 @@ const readUserMessage = () => {
     const text = user_input.value
     user_input.value = ""
     addMessageToChatBox(text, DefaultData.USER.CLIENT)
-    console.log(text, typeof(text), "profile", typeof("profile"), text=="profile", text==="profile");
     if(text === "profile"){
-        send = createProfile()
-        addHTMLToChatBox(send)
+        [p1, p2] = createProfile()
+        addHTMLToChatBox(p1, p2)
         return
     }
     sendAnswerMessage(text)
@@ -25,18 +24,12 @@ const addMessageToChatBox = (text, sender) => {
         addChatToHistory(text)
     }
 }
-const addHTMLToChatBox = (text, sender) => {
+const addHTMLToChatBox = (...element_blocks) => {
     const chat_box = document.querySelector("#chat-box")
-    const chat = createHTMLChatDOM(text)
-    const user = createSenderDOM(sender)
-    const element = document.createElement('div')
-    element.appendChild(user)
-    element.appendChild(chat)
-    chat_box.appendChild(element)
-    removeAdviceInChatBox()
-    if(sender == DefaultData.USER.CLIENT){
-        addChatToHistory(text)
+    for(const element of element_blocks){
+        chat_box.appendChild(element)
     }
+    removeAdviceInChatBox()
 }
 
 const createChatDOM = (text) => {
