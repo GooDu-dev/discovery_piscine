@@ -68,8 +68,12 @@ nav .options .options-items .item:hover{
     background-color: var(--third-bg-color);
 }
 nav .options .options-items .item li{
+    width: 100%;
     list-style-type: none;
     color: var(--main-font-color);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 nav .options .options-items .item .icon{
     position: relative; 

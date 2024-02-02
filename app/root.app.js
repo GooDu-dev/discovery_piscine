@@ -14,4 +14,37 @@ const removeAdviceInChatBox = () => {
     }
 }
 
-preventRefeshWhenEnter()
+
+const createCookie = (name, value) => {
+    const exp = new Date()
+    document.cookie = `${name}=${value}`
+    document.cookie = `${DefaultData.COOKIE_TIME}=${exp.toUTCString()}`
+}
+
+const getCookie = (ckey) => {
+    const cookies = document.cookie.split(';')
+    for(const cookie of cookies){
+        const [name, value] = cookie.split(';')
+        if(name.trim() = ckey){
+            return value;
+        }
+    }
+    return ""
+}
+
+const getCookieValue = (ckey) => {
+    const cookies = document.cookie.split(';')
+    for(const cookie of cookies){
+        const [name, value] = cookie.split('=')
+        if(name.trim() === ckey){
+            return value
+        }
+    }
+    return ''
+}
+
+window.onload = () => {
+    preventRefeshWhenEnter(),
+    initChatToHistory(),
+    initHistoryTime()
+}

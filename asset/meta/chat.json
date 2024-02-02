@@ -2,5 +2,6 @@
     "hello" : "hi",
     "hi" : "hello",
     "ping" : "pong",
-    "profile" : "You want to see our profile?\nType 'profile.pakinsri' or 'profile.tnuengch' for more detial"
+    "profile" : "You want to see our profile?\nType 'profile.pakinsri' or 'profile.tnuengch' for more detial",
+    "good" : "better"
 }

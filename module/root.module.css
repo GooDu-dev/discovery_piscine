@@ -86,3 +86,46 @@ li{
 .bg-color-3 {
     color: var(--third-bg-color);
 }
+
+/* Ipad */
+@media screen and (max-width:1000px){
+    :root{
+        --font-scale : 13;
+        --main-bg-color : #343541;
+        --seccondary-bg-color  : #000000;
+        --third-bg-color : #202123;
+        --main-font-color : #FFFFFF;
+        --seccondary-font-color : #C5C5D2;
+        --third-font-color : #202123;
+        --danger-color : #EF4036;
+    }
+}
+/* mobile */
+@media screen and (max-width:600px){
+    :root{
+        --font-scale : 10;
+        --main-bg-color : #343541;
+        --seccondary-bg-color  : #000000;
+        --third-bg-color : #202123;
+        --main-font-color : #FFFFFF;
+        --seccondary-font-color : #C5C5D2;
+        --third-font-color : #202123;
+        --danger-color : #EF4036;
+    }
+}
+/* mobile */
+@media screen and (max-width:500px){
+    :root{
+        --font-scale : 10;
+        --main-bg-color : #343541;
+        --seccondary-bg-color  : #000000;
+        --third-bg-color : #202123;
+        --main-font-color : #FFFFFF;
+        --seccondary-font-color : #C5C5D2;
+        --third-font-color : #202123;
+        --danger-color : #EF4036;
+    }
+    nav{
+        display: none !important ;
+    }
+}

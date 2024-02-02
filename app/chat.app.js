@@ -1,16 +1,8 @@
-const answer_path = "../asset/meta/chat.json"
-const USER = {
-    SERVER : '12:11 AM',
-    PAKINSRI : "Pakinsri",
-    TNEUENGCH : "tnuengch",
-    USER : 'You'
-}
-
 const readUserMessage = () => {
     const user_input = document.querySelector("#user-message")
     const text = user_input.value
     user_input.value = ""
-    addMessageToChatBox(text, USER.USER)
+    addMessageToChatBox(text, DefaultData.USER.CLIENT)
     sendAnswerMessage(text)
 }
 
@@ -23,6 +15,9 @@ const addMessageToChatBox = (text, sender) => {
     element.appendChild(chat)
     chat_box.appendChild(element)
     removeAdviceInChatBox()
+    if(sender == DefaultData.USER.CLIENT){
+        addChatToHistory(text)
+    }
 }
 
 const createChatDOM = (text) => {
@@ -30,6 +25,7 @@ const createChatDOM = (text) => {
     output.innerText = text
     return output
 }
+
 const createSenderDOM = (who) => {
     const output = document.createElement('h3')
     output.innerText = "/> " + who
@@ -38,7 +34,7 @@ const createSenderDOM = (who) => {
 
 const getChatResponse = async (text) => {
     try {
-        let response = await fetch(answer_path);
+        let response = await fetch(DefaultData.ANSWER_PATH);
         
         if (!response.ok) {
             throw new Error('Cannot fetch JSON');
@@ -59,7 +55,7 @@ const getChatResponse = async (text) => {
 const sendAnswerMessage = (text) => {
     getChatResponse(text)
     .then( answer => {
-        addMessageToChatBox(answer, USER.SERVER)
+        addMessageToChatBox(answer, DefaultData.USER.SERVER)
     })
     .catch( err => {
         alert("Error: " + err)
