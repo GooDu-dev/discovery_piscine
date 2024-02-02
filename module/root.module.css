@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 :root{
-    --font-scale : 20;
+    --font-scale : 18;
     --main-bg-color : #343541;
     --seccondary-bg-color  : #000000;
     --third-bg-color : #202123;
@@ -23,27 +23,27 @@ body{
 }
 
 h1{
-    font-size: calc(48 / var(--font-scale) * 1rem);
+    font-size: calc((48 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 h2{
-    font-size: calc(40 / var(--font-scale) * 1rem);
+    font-size: calc((40 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 h3{
-    font-size: calc(36 / var(--font-scale) * 1rem);
+    font-size: calc((36 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 p{
-    font-size: calc(24 / var(--font-scale) * 1rem);
+    font-size: calc((24 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 p.desc{
-    font-size: calc(18 / var(--font-scale) * 1rem);
+    font-size: calc((18 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 li{
-    font-size: calc(22 / var(--font-scale) * 1rem);
+    font-size: calc((22 / var(--font-scale)) * 1vw);
     color: var(--main-font-color);
 }
 
@@ -57,22 +57,22 @@ li{
     color: var(--third-font-color);
 }
 .font-size-xxs {
-    font-size: calc(14 / var(--font-scale) * 1rem) !important;
+    font-size: calc((14 / var(--font-scale)) * 1vw) !important;
 }
 .font-size-xs {
-    font-size: calc(18 / var(--font-scale) * 1rem) !important;
+    font-size: calc((18 / var(--font-scale)) * 1vw) !important;
 }
 .font-size-s {
-    font-size: calc(22 / var(--font-scale) * 1rem) !important;
+    font-size: calc((22 / var(--font-scale)) * 1vw) !important;
 }
 .font-size-m {
-    font-size: calc(24 / var(--font-scale) * 1rem) !important;
+    font-size: calc((24 / var(--font-scale)) * 1vw) !important;
 }
 .font-size-l {
-    font-size: calc(36 / var(--font-scale) * 1rem) !important;
+    font-size: calc((36 / var(--font-scale)) * 1vw) !important;
 }
 .font-size-xl {
-    font-size: calc(40 / var(--font-scale) * 1rem) !important;
+    font-size: calc((40 / var(--font-scale)) * 1vw) !important;
 }
 .bg-color-1 {
     color: var(--main-bg-color);

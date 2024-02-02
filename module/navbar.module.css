@@ -83,7 +83,7 @@ nav .options .options-items .item .icon .dropdown-icon{
 nav .options .options-items .item .icon .dropdown{
     display: none;
     position: absolute;
-    width: 15vw;
+    width: 500%;
     top: 100%;
     left: 0%;
 }
@@ -99,7 +99,7 @@ nav .options .options-items .item .icon .dropdown .item.item:hover{
     background-color: var(--seccondary-bg-color);
 }
 nav .options .options-items .item .icon .dropdown .item .item-icon{
-    width: 15%;
+    width: 10%;
     object-fit: contain;
     margin-right: 10%;
 }
@@ -167,10 +167,9 @@ nav .profile-option .custom-select #user {
     background-color: transparent;
     color: var(--main-font-color);
     border: none;
+    text-align: right;
+    padding-right: 5%;
 }
 nav .profile-option .custom-select #user option {
     background-color: var(--third-bg-color);
-    border: none;
-    box-shadow: none;
-    padding: 0px;
 }
