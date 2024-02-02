@@ -1,6 +1,8 @@
 const answer_path = "../asset/meta/chat.json"
 const USER = {
     SERVER : '12:11 AM',
+    PAKINSRI : "Pakinsri",
+    TNEUENGCH : "tnuengch",
     USER : 'You'
 }
 
@@ -20,6 +22,7 @@ const addMessageToChatBox = (text, sender) => {
     element.appendChild(user)
     element.appendChild(chat)
     chat_box.appendChild(element)
+    removeAdviceInChatBox()
 }
 
 const createChatDOM = (text) => {
@@ -46,7 +49,7 @@ const getChatResponse = async (text) => {
         if(output === undefined){
             output = "Sorry we don't know what that's mean"
         }
-        
+
         return output;
     } catch (err) {
         alert("Error: " + err);

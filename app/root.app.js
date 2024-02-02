@@ -7,9 +7,9 @@ const preventRefeshWhenEnter = () => {
 }
 
 const removeAdviceInChatBox = () => {
-    const chatBox = document.querySelector(".chat-bpx")
+    const chatBox = document.querySelector("#chat-box")
     const advice = document.querySelectorAll(".advice")[0]
-    if(chatBox.classList.length != 0){
+    if(chatBox.classList.length != 0 && advice !== undefined){
         advice.remove()
     }
 }
